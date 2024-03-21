@@ -131,7 +131,6 @@ spec:
     targetPort: 7070
 
 ---
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -206,7 +205,6 @@ spec:
     targetPort: 5050
 
 ---
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -273,7 +271,6 @@ spec:
     targetPort: 7000
 
 ---
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -452,7 +449,6 @@ spec:
     port: 80
     targetPort: 8080
 ---
-
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
@@ -469,7 +465,8 @@ resources:
  - redis.yaml
  - shippingservice.yaml
 
----apiVersion: apps/v1
+---
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: loadgenerator
@@ -605,7 +602,6 @@ spec:
     targetPort: 50051
 
 ---
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
